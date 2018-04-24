@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'bundler'
+
 gem 'jekyll', '3.7.2'
 
 group :jekyll_plugins do
