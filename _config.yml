@@ -33,6 +33,7 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-archives
+  - classifier-reborn
 
 exclude:
   - Gemfile
