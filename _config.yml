@@ -5,20 +5,20 @@ title: Just Enough Sound Co., LLC
 url: "https://justprosound.com"
 baseurl:
 google_analytics_key:
-google_maps_javascript_api_key:
+google_maps_javascript_api_key: AIzaSyA3pTOyVkG14bsqpB9kbmMYDT9EdhOCmwA
 disqus_shortname:
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
 description: App marketing template for Jekyll.
 author:
-  name:
-  email: webmaster@justprosound.com
-  twitter: # twitter username without the @ symbol
-social:
-  name: Frisco Template
-  links:
-    - https://github.com/CloudCannon/frisco-jekyll-template
+  name: Sam Kuonen
+  email: sam@justprosound.com
+  twitter: SamKuonen # twitter username without the @ symbol
+#social:
+#  name: Frisco Template
+#  links:
+#    - https://github.com/CloudCannon/frisco-jekyll-template
 
 # -----
 # Build
