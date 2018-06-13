@@ -1,6 +1,6 @@
 ---
 name: Sam Kuonen
-position: Founder
+position: Owner
 image_path:
 twitter_username: SamKuonen
 blurb: >-
