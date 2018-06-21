@@ -20,6 +20,29 @@ image: 'https://source.unsplash.com/WNAO036c6FM/2000x1322?a=.png'
 
 <section class="pad">
 	<div class="text-container contact-box">
+	    
+	    <form action="https://formspree.io/{{site.email}}" method="POST" class="contact-form">
+	        <input type="text" name="_gotcha" style="display:none">
+	        
+	        <label for="name">Name</label>
+			<input type="text" name="name" id="name" placeholder="Enter your name..." />
+	        
+	        <label for="email">Email Address</label>
+            <input type="text" name="email" id="email" placeholder="Enter your email..." required />
+            
+            <label for="message">Message</label>
+            <textarea type="text" name="content" id="message" rows="10" placeholder="Enter your message..."></textarea>
+            
+            
+            <input type="hidden" name="_subject" value="New Contact Form Submission">
+            
+            <input type="submit" value="Send Message">
+            
+            <input type="hidden" name="_next" value="{{ site.baseurl }}/contact-success/">
+            
+        </form>
+	    
+	    <!--
 		<form action="{{ site.baseurl }}/contact-success/" method="post" class="contact-form">
 			<input type="hidden" name="_to" value="info@justprosound.com" />
 			<input type="text" name="_gotcha" style="display: none;" />
@@ -27,14 +50,15 @@ image: 'https://source.unsplash.com/WNAO036c6FM/2000x1322?a=.png'
 			<label for="name">Name</label>
 			<input type="text" name="name" id="name" placeholder="Enter your name..." />
 
-			<label for="email">Email Address</label>
-			<input type="email" name="email" id="email" placeholder="Enter your email..." required />
+			###<label for="email">Email Address</label>
+			###<input type="email" name="email" id="email" placeholder="Enter your email..." required />
 
-			<label for="message">Message</label>
-			<textarea name="message" id="message" placeholder="Enter your message..."></textarea>
+			###<label for="message">Message</label>
+			###<textarea name="message" id="message" placeholder="Enter your message..."></textarea>
 
 			<input type="submit" value="Send Message" />
 		</form>
+        -->
 
 		<div class="contact-details">
 			<h3>Address</h3>
