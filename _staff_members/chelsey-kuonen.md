@@ -1,7 +1,7 @@
 ---
 name: Chelsey Kuonen
-position: Purchasing Coordinator
+position: Procurement Officer
 image_path:
 twitter_username:
-blurb: 'As our purchasing coordinator, Chelsey provides order support.'
+blurb:
 ---
