@@ -1,6 +1,6 @@
 ---
 name: Chelsey Kuonen
-position: Procurement Officer
+position: Director of Operations
 image_path:
 twitter_username:
 blurb:
