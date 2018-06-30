@@ -20,14 +20,18 @@ image: 'https://source.unsplash.com/WNAO036c6FM/2000x1322?a=.png'
 
 <section class="pad">
 	<div class="text-container contact-box">
-	    
+
+<!-- freshdesk -->
+<script type="text/javascript" src="https://s3.amazonaws.com/assets.freshdesk.com/widget/freshwidget.js"></script>
+<style type="text/css" media="screen, projection">
+	@import url(https://s3.amazonaws.com/assets.freshdesk.com/widget/freshwidget.css); 
+</style> 
+<iframe title="Feedback Form" class="freshwidget-embedded-form" id="freshwidget-embedded-form" src="https://justprosound.freshdesk.com/widgets/feedback_widget/new?&widgetType=embedded&screenshot=No&captcha=yes" scrolling="no" height="500px" width="100%" frameborder="0" >
+</iframe>
+
+<!-- formspree
 	    <form action="https://formspree.io/info@justprosound.com" method="POST" class="contact-form">
 	        <input type="text" name="_gotcha" style="display:none">
-	        
-	        <!--
-	        <label for="name">Name</label>
-			<input type="text" name="name" id="name" placeholder="Enter your name..." />
-	        -->
 	        
 	        <label for="email">Email Address</label>
             <input type="text" name="email" id="email" placeholder="Enter your email..." required />
@@ -42,7 +46,7 @@ image: 'https://source.unsplash.com/WNAO036c6FM/2000x1322?a=.png'
             <input type="hidden" name="_next" value="{{ site.baseurl }}/contact-success/">
             
         </form>
-	    
+-->    
 	    <!--
 		<form action="{{ site.baseurl }}/contact-success/" method="post" class="contact-form">
 			<input type="hidden" name="_to" value="info@justprosound.com" />
