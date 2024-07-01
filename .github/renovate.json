@@ -1,0 +1,55 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:best-practices",
+    ":enableVulnerabilityAlerts",
+    ":enablePreCommit",
+    ":dependencyDashboard",
+    ":maintainLockFilesWeekly",
+    ":preserveSemverRanges",
+    "group:recommended",
+    "group:linters",
+    "group:nodeJs",
+    "helpers:pinGitHubActionDigestsToSemver",
+    "mergeConfidence:all-badges",
+    "npm:unpublishSafe",
+    "packages:linters",
+    "schedule:weekdays",
+    "security:openssf-scorecard",
+    "workarounds:all"
+  ],
+  "major": {
+    "dependencyDashboardApproval": true
+  },
+  "dependencyDashboardOSVVulnerabilitySummary": "unresolved",
+  "osvVulnerabilityAlerts": true,
+  "lockFileMaintenance": {
+    "commitMessageAction": "Update",
+    "extends": [
+      "group:all"
+    ]
+  },
+  "separateMultipleMajor": true,
+  "separateMajorMinor": true,
+  // "ignorePaths": [
+  //   "**/node_modules/**",
+  //   "**/bower_components/**",
+  //   "requirements.txt",
+  //   "requirements/*.in"
+  // ],
+  "html": {
+    "fileMatch": [ "\\.html?$"]
+  },
+  "cdnurl": {
+    "fileMatch": [ "\\.html?$"]
+  },
+  "packageRules": [
+    {
+      "description": "Automerge non-major updates",
+      "matchUpdateTypes": ["minor", "patch"],
+      "automerge": false,
+      "minimumReleaseAge": "3 days"
+    }
+  ],
+  "timezone": "America/New_York"
+}
