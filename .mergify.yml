@@ -1,4 +1,21 @@
+queue_rules:
+  - name: Snyk PRs Queue
+    conditions:
+      - "check-success ~= .*"
+
 pull_request_rules:
+  - name: Automatic merge Snyk PRs on Status Checks passing
+    conditions:
+      - title~=^\[Snyk\]
+      - head~=^snyk-fix
+      - base=master
+    actions:
+      queue:
+        name: "Snyk PRs Queue"
+      label:
+        add:
+          - "auto-merge"
+
   - name: Automatic merge during office hours
     description: Merge when PR passes all branch protection during office hours
     conditions:
