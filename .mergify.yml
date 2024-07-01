@@ -1,8 +1,7 @@
 queue_rules:
   - name: Snyk PRs Queue
     conditions:
-      - "check-success ~= .*"
-
+      - check-success ~= .*
 pull_request_rules:
   - name: Automatic merge Snyk PRs on Status Checks passing
     conditions:
@@ -11,14 +10,7 @@ pull_request_rules:
       - base=master
     actions:
       queue:
-        name: "Snyk PRs Queue"
+        name: Snyk PRs Queue
       label:
         add:
-          - "auto-merge"
-
-  - name: Automatic merge during office hours
-    description: Merge when PR passes all branch protection during office hours
-    conditions:
-      - schedule = Mon-Fri 09:00-17:00[America/Los_Angeles]
-    actions:
-      merge: 
+          - auto-merge
