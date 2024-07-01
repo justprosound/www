@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 
 gem 'bundler'
 
+gem 'faraday-retry', '1.6.0'
+
 gem 'jekyll', '3.10.0'
 
 group :jekyll_plugins do
