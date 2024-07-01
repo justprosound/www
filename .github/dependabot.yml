@@ -6,3 +6,11 @@ updates:
         interval: "daily"
         timezone: "America/New_York"
         time: "10:30"
+
+  # Maintain dependencies for GitHub Actions
+  - package-ecosystem: "github-actions"
+    # Workflow files stored in the default location of `.github/workflows`
+    directory: "/"
+    schedule:
+      interval: "daily"
+    open-pull-requests-limit: 10
