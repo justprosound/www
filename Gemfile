@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'bundler'
 
-gem 'faraday-retry', '1.6.0'
+gem 'faraday-retry', '2.2.1'
 
 gem 'jekyll', '3.10.0'
 
