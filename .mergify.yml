@@ -1,0 +1,7 @@
+pull_request_rules:
+  - name: Automatic merge during office hours
+    description: Merge when PR passes all branch protection during office hours
+    conditions:
+      - schedule = Mon-Fri 09:00-17:00[America/Los_Angeles]
+    actions:
+      merge: 
