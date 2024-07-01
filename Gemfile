@@ -1,16 +1,18 @@
 source 'https://rubygems.org'
 
 gem 'bundler'
+gem 'faraday-retry'
+gem 'jekyll'
 
-gem 'faraday-retry', '1.6.0'
-
-gem 'jekyll', '3.10.0'
-
-group :jekyll_plugins do
-  gem 'jekyll-archives', '2.2.1'
-  gem 'jekyll-feed', '0.17.0'
-  gem 'jekyll-paginate', '1.1.0'
-  gem 'jekyll-seo-tag', '2.8.0'
-  gem 'jekyll-sitemap', '1.4.0'
-  gem 'classifier-reborn'
-end
+gem 'classifier-reborn'
+gem 'jekyll-archives'
+gem 'jekyll-avatar'
+gem 'jekyll-feed'
+gem 'jekyll-include-cache'
+gem 'jekyll-mentions'
+gem 'jekyll-paginate'
+gem 'jekyll-redirect-from'
+gem 'jekyll-remote-theme'
+gem 'jekyll-seo-tag'
+gem 'jekyll-sitemap'
+gem 'jemoji'
