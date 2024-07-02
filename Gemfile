@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'bundler', '2.2'
+gem "bundler", ">= 2.2.33"
 gem 'faraday-retry', '1.8'
 gem 'jekyll', '4.3.3'
 
