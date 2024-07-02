@@ -28,18 +28,18 @@ timezone: Etc/UTC
 permalink: pretty
 
 plugins:
-  - jekyll-sitemap
-  - jekyll-seo-tag
-  - jekyll-feed
-  - jekyll-paginate
-  - jekyll-archives
   - classifier-reborn
-  - jekyll-feed
-  - jekyll-redirect-from
+  - jekyll-archives
   - jekyll-avatar
-  - jemoji
-  - jekyll-mentions
+  - jekyll-feed
+  - jekyll-feed
   - jekyll-include-cache
+  - jekyll-mentions
+  - jekyll-paginate
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jemoji
 
 exclude:
   - Gemfile

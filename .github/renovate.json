@@ -1,20 +1,22 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:best-practices",
-    ":enableVulnerabilityAlerts",
-    ":enablePreCommit",
     ":dependencyDashboard",
+    ":enablePreCommit",
+    ":enableVulnerabilityAlerts",
+    ":ignoreModulesAndTests",
     ":maintainLockFilesWeekly",
     ":preserveSemverRanges",
+    ":semanticPrefixFixDepsChoreOthers",
+    "config:best-practices",
     "group:recommended",
-    "group:linters",
-    "group:nodeJs",
     "helpers:pinGitHubActionDigestsToSemver",
     "mergeConfidence:all-badges",
     "npm:unpublishSafe",
     "packages:linters",
-    "schedule:weekdays",
+    "replacements:all",
+    "schedule:automergeEarlyMondays", 
+    "schedule:daily",
     "security:openssf-scorecard",
     "workarounds:all"
   ],
@@ -31,12 +33,6 @@
   },
   "separateMultipleMajor": true,
   "separateMajorMinor": true,
-  // "ignorePaths": [
-  //   "**/node_modules/**",
-  //   "**/bower_components/**",
-  //   "requirements.txt",
-  //   "requirements/*.in"
-  // ],
   "html": {
     "fileMatch": [ "\\.html?$"]
   },
