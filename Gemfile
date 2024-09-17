@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem "bundler", ">= 2.2.33"
 gem 'faraday-retry', '2.2.1'
-gem 'jekyll', '4.3.3'
+gem 'jekyll', '4.3.4'
 
 gem 'classifier-reborn', '2.3.0'
 gem 'jekyll-archives', '2.2.1'
