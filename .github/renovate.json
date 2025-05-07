@@ -15,7 +15,7 @@
     "npm:unpublishSafe",
     "packages:linters",
     "replacements:all",
-    "schedule:automergeEarlyMondays", 
+    "schedule:automergeEarlyMondays",
     "schedule:daily",
     "security:openssf-scorecard",
     "workarounds:all"
@@ -34,15 +34,22 @@
   "separateMultipleMajor": true,
   "separateMajorMinor": true,
   "html": {
-    "fileMatch": [ "\\.html?$"]
+    "managerFilePatterns": [
+      "/\\.html?$/"
+    ]
   },
   "cdnurl": {
-    "fileMatch": [ "\\.html?$"]
+    "managerFilePatterns": [
+      "/\\.html?$/"
+    ]
   },
   "packageRules": [
     {
       "description": "Automerge non-major updates",
-      "matchUpdateTypes": ["minor", "patch"],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
       "automerge": true,
       "minimumReleaseAge": "3 days"
     }
