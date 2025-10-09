@@ -12,7 +12,7 @@
     "group:recommended",
     "helpers:pinGitHubActionDigestsToSemver",
     "mergeConfidence:all-badges",
-    "npm:unpublishSafe",
+    "security:minimumReleaseAgeNpm",
     "packages:linters",
     "replacements:all",
     "schedule:automergeEarlyMondays",
