@@ -33,8 +33,7 @@ function App() {
           <span>Identity: Just Enough Sound</span>
         </div>
         <div className="status-group">
-          <div className="status-item"><span>Region: GBL</span></div>
-          <div className="status-item"><span>Status: Mission Critical</span></div>
+          <div className="status-item"><span>Protocol: Cable Blue Signature</span></div>
           <div className="status-item"><span>Domain: justprosound.com</span></div>
         </div>
       </nav>
@@ -42,18 +41,18 @@ function App() {
       {/* Hero Layer */}
       <header>
         <div className="container">
-          <div className="identity-label">Identity Protocol JES_01</div>
+          <div className="identity-label">Identity Protocol // JES-SIG-01</div>
           <img src={logo} className="logo" alt="Just Enough Sound" />
           <h1 className="hero-title">Just Enough Sound</h1>
           <p className="hero-sub">
-            Precision engineering for live event production and 
-            mission-critical open source infrastructure.
+            Precision live event production and open source infrastructure. 
+            Identified by the <span className="accent" style={{ fontWeight: 600 }}>Blue Ring</span> of professional stability.
           </p>
         </div>
       </header>
 
       <main>
-        {/* Services Layer - Production Focused */}
+        {/* Services Layer */}
         <section className="section">
           <div className="container">
             <div className="section-header">
@@ -84,13 +83,13 @@ function App() {
           </div>
         </section>
 
-        {/* FOSS Layer - Developer Focused */}
+        {/* FOSS Layer */}
         <section className="section" style={{ background: 'var(--bg-accent)' }}>
           <div className="container">
             <div className="section-header">
               <span className="section-num">02</span>
               <span className="section-label">Code Base</span>
-              <h2 className="section-title">Open Source Modules</h2>
+              <h2 className="section-title">Open Source Infrastructure</h2>
             </div>
             <div className="grid-system">
               <div className="card-dynamic" style={{ background: 'var(--bg-color)' }}>
@@ -119,27 +118,21 @@ function App() {
       {/* Footer Layer */}
       <footer>
         <div className="container">
-          <div className="footer-grid">
+          <div className="footer-grid" style={{ gridTemplateColumns: '1.5fr 1fr' }}>
             <div className="footer-col">
               <img src={logo} className="footer-logo" alt="Just Enough Sound" />
-              <p>Just Enough Sound is a philosophy of precise technical equilibrium. We provide exactly what is needed for mission-critical stability.</p>
+              <p>Just Enough Sound is a philosophy of precise technical equilibrium. We provide exactly what is needed for mission-critical stability in the field and the data center.</p>
             </div>
             <div className="footer-col">
               <h4>Contact</h4>
-              <p>Operations: Field/Remote</p>
+              <p>Identity: Just Enough Sound Co., LLC</p>
               <p>Email: sam@justprosound.com</p>
-              <p>GitHub: @justprosound</p>
-            </div>
-            <div className="footer-col">
-              <h4>Access</h4>
-              <p>justprosound.com</p>
-              <p>denimarcade.com</p>
-              <p>micboard.io</p>
+              <p>GitHub: github.com/justprosound</p>
             </div>
           </div>
           <div className="legal-bar">
             <div>&copy; {new Date().getFullYear()} Just Enough Sound Co., LLC.</div>
-            <div>Identity Protocol: JES_01 // All Rights Reserved</div>
+            <div>Access Point: justprosound.com // Identity Protocol: JES-SIG-01</div>
           </div>
         </div>
       </footer>

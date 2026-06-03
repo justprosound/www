@@ -1,21 +1,24 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="240" height="40" viewBox="0 0 240 40">
-  <!-- Light version for Dark Backgrounds -->
+  <!-- Just Enough Sound - Blue Ring Signature (Light Version) -->
   <defs>
-    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#ffd700;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#b8860b;stop-opacity:1" />
+    <linearGradient id="ringBlue" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#008cff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0055ff;stop-opacity:1" />
     </linearGradient>
   </defs>
-  <!-- Icon: Perfectly Balanced Signal -->
+  
+  <!-- Connector Icon with Signature Blue Ring -->
   <g transform="translate(0, 4)">
-    <rect x="0" y="12" width="3" height="8" rx="1.5" fill="url(#goldGrad)" />
-    <rect x="6" y="8" width="3" height="16" rx="1.5" fill="url(#goldGrad)" />
-    <rect x="12" y="4" width="3" height="24" rx="1.5" fill="url(#goldGrad)" />
-    <rect x="18" y="0" width="3" height="32" rx="1.5" fill="url(#goldGrad)" />
-    <rect x="24" y="4" width="3" height="24" rx="1.5" fill="url(#goldGrad)" />
-    <rect x="30" y="8" width="3" height="16" rx="1.5" fill="url(#goldGrad)" />
-    <rect x="36" y="12" width="3" height="8" rx="1.5" fill="url(#goldGrad)" />
+    <!-- Connector Body (Simplified XLR/Ethercon silhouette) -->
+    <rect x="0" y="6" width="32" height="20" rx="2" fill="#333" />
+    <!-- The Signature Blue Ring (Collar) -->
+    <rect x="24" y="4" width="6" height="24" rx="1" fill="url(#ringBlue)" />
+    <!-- Contacts -->
+    <circle cx="6" cy="16" r="1.5" fill="#555" />
+    <circle cx="12" cy="16" r="1.5" fill="#555" />
+    <circle cx="18" cy="16" r="1.5" fill="#555" />
   </g>
-  <!-- Brand Text -->
-  <text x="50" y="27" font-family="Inter, -apple-system, sans-serif" font-weight="700" font-size="18" fill="#FFFFFF" letter-spacing="0.1em">JUST ENOUGH SOUND</text>
+
+  <!-- Identity Text -->
+  <text x="45" y="27" font-family="Inter, -apple-system, sans-serif" font-weight="800" font-size="19" fill="#FFFFFF" letter-spacing="0.05em">JUST ENOUGH SOUND</text>
 </svg>
