@@ -12,7 +12,7 @@ header {
 }
 
 .logo {
-  height: 6em;
+  height: 4em;
   padding: 1.5rem;
   will-change: filter;
   transition: filter 300ms;
