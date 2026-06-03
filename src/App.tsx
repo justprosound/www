@@ -26,6 +26,16 @@ function App() {
 
   return (
     <div className="app">
+      <div className="status-bar">
+        <div className="status-item">
+          <div className="status-indicator"></div>
+          <span>System Active: Just Enough Sound Identity</span>
+        </div>
+        <div className="status-item">
+          <span>Namespace: justprosound.com</span>
+        </div>
+      </div>
+
       <div className="theme-toggle">
         <button className="theme-btn" onClick={toggleTheme} aria-label="Toggle Theme">
           {theme === 'dark' ? '☀️' : '🌙'}
@@ -33,68 +43,66 @@ function App() {
       </div>
 
       <header>
-        <div className="container">
+        <div className="container logo-container">
           <img src={logo} className="logo" alt="Just Enough Sound Logo" />
-          <h1 className="brand-name">Just Enough Sound</h1>
-          <p className="tagline">
-            Live Event Production & Open Source Infrastructure
-          </p>
+          <span className="brand-identity">The Identity of</span>
+          <h1 className="brand-title">Just Enough Sound</h1>
+          <div className="domain-context">justprosound.com</div>
         </div>
       </header>
 
       <main>
-        {/* Professional Services */}
+        {/* Core Methodology */}
         <section className="section">
           <div className="container">
-            <h2 className="section-title">Live Production Services</h2>
-            <p className="tagline" style={{ fontSize: '1.2rem', marginBottom: '3rem' }}>
-              Precision-engineered stability for high-stakes theatrical and broadcast environments.
+            <span className="section-label">01 // Methodology</span>
+            <h2 className="section-title">The Engineering of "Enoughness"</h2>
+            <p className="tagline" style={{ color: 'var(--text-card)', maxWidth: '800px', fontSize: '1.2rem', marginBottom: '4rem' }}>
+              We operate on a philosophy of precise technical equilibrium. Not excessive, not lacking—but exactly the signal required for mission-critical stability.
             </p>
-            <div className="grid">
-              <div className="card">
+            <div className="technical-grid">
+              <div className="tech-card">
+                <div className="card-meta"><span>TYPE: SRV_AUDIO</span><span>LOC: FIELD</span></div>
                 <h3>Audio Engineering</h3>
-                <p>Sophisticated sound design and system optimization for corporate theatre, concerts, and touring.</p>
+                <p>Advanced acoustic modeling and system deployment for environments where failure is not a technical option.</p>
               </div>
-              <div className="card">
-                <h3>Signal Infrastructure</h3>
-                <p>High-reliability networking and redundant signal routing solutions designed to never fail.</p>
+              <div className="tech-card">
+                <div className="card-meta"><span>TYPE: NET_INFRA</span><span>LOC: FIELD</span></div>
+                <h3>Technical Infrastructure</h3>
+                <p>Hardened networking and low-latency signal routing designed for the rigors of live broadcast and theatre.</p>
               </div>
-              <div className="card">
-                <h3>Technical Direction</h3>
-                <p>Comprehensive technical management and consulting to bridge the gap between creative vision and reality.</p>
+              <div className="tech-card">
+                <div className="card-meta"><span>TYPE: DEV_CUSTOM</span><span>LOC: REMOTE</span></div>
+                <h3>Custom Solutions</h3>
+                <p>Targeted software development and technical consulting tailored to specific architectural challenges.</p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* FOSS & Infrastructure */}
-        <section className="section" style={{ background: 'var(--bg-accent)', borderTop: '1px solid var(--border-color)' }}>
+        {/* FOSS Modules */}
+        <section className="section" style={{ background: 'var(--bg-accent)' }}>
           <div className="container">
-            <h2 className="section-title">Open Source Infrastructure</h2>
-            <p className="tagline" style={{ fontSize: '1.2rem', marginBottom: '3rem' }}>
-              We develop and maintain a suite of tools that solve real-world problems in the live production space.
-            </p>
-            <div className="grid">
-              <div className="card" style={{ background: 'var(--bg-color)' }}>
+            <span className="section-label">02 // Open Source Modules</span>
+            <h2 className="section-title">Public Domain Infrastructure</h2>
+            <div className="technical-grid">
+              <div className="tech-card">
+                <div className="card-meta"><span>ID: MICBOARD</span><span>VER: STABLE</span></div>
                 <h3>django-micboard</h3>
-                <p>
-                  A real-time wireless microphone monitoring dashboard built for high-stakes live productions.
-                </p>
-                <a href="https://github.com/justprosound/django-micboard" className="link">View on GitHub</a>
+                <p>Real-time telemetry and monitoring interface for wireless RF systems in high-density production environments.</p>
+                <a href="https://github.com/justprosound/django-micboard" className="tech-link">Repo Access</a>
               </div>
-              <div className="card" style={{ background: 'var(--bg-color)' }}>
+              <div className="tech-card">
+                <div className="card-meta"><span>ID: MEDIASTACK</span><span>VER: STABLE</span></div>
                 <h3>media-stack</h3>
-                <p>
-                  A comprehensive containerized suite for media production workflows and content delivery.
-                </p>
-                <a href="https://github.com/justprosound/media-stack" className="link">View on GitHub</a>
+                <p>Containerized orchestration for professional media processing workflows and content delivery pipelines.</p>
+                <a href="https://github.com/justprosound/media-stack" className="tech-link">Repo Access</a>
               </div>
-              <div className="card" style={{ background: 'var(--bg-color)' }}>
-                <h3>zabbix-proxy-sqlite3-av-edition</h3>
-                <p>
-                  Specialized monitoring proxy optimized for AV infrastructure and resource-constrained environments.
-                </p>
-                <a href="https://github.com/justprosound/zabbix-proxy-sqlite3-av-edition" className="link">View on GitHub</a>
+              <div className="tech-card">
+                <div className="card-meta"><span>ID: ZABBIX_AV</span><span>VER: STABLE</span></div>
+                <h3>zabbix-proxy-av</h3>
+                <p>Monitoring proxy optimized for resource-constrained AV hardware and mission-critical reliability.</p>
+                <a href="https://github.com/justprosound/zabbix-proxy-sqlite3-av-edition" className="tech-link">Repo Access</a>
               </div>
             </div>
           </div>
@@ -102,9 +110,15 @@ function App() {
       </main>
 
       <footer>
-        <div className="container">
-          <p>&copy; {new Date().getFullYear()} Just Enough Sound Co., LLC. All rights reserved.</p>
-          <p>justprosound.com | <a href="https://github.com/justprosound" style={{ color: 'inherit' }}>github.com/justprosound</a></p>
+        <div className="container footer-content">
+          <div>
+            <p>&copy; {new Date().getFullYear()} Just Enough Sound Co., LLC.</p>
+            <p style={{ marginTop: '0.5rem' }}>Identity Protocol: JES-2026.06.03</p>
+          </div>
+          <div style={{ textAlign: 'right' }}>
+            <p>Access Point: <span style={{ color: 'var(--accent-color)' }}>justprosound.com</span></p>
+            <p style={{ marginTop: '0.5rem' }}>Source: <a href="https://github.com/justprosound" style={{ color: 'inherit' }}>github.com/justprosound</a></p>
+          </div>
         </div>
       </footer>
     </div>
