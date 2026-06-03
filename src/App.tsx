@@ -26,7 +26,7 @@ function SystemNav({ theme, toggleTheme }: ThemeProps) {
       <nav className="status-bar">
         <div className="status-item">
           <div className="status-indicator"></div>
-          <span>Identity: Just Enough Sound</span>
+          <span className="hide-mobile">Identity:</span> <span>Just Enough Sound</span>
         </div>
         <div className="status-group">
           <div className="status-item">
@@ -35,7 +35,7 @@ function SystemNav({ theme, toggleTheme }: ThemeProps) {
           <div className="status-item">
             <Link to="/dev" className={`status-link ${isDev ? 'active' : ''}`}>[ 02: Infrastructure ]</Link>
           </div>
-          <div className="status-item hide-mobile"><span>Namespace: justprosound.com</span></div>
+          <div className="status-item hide-tablet"><span>Namespace: justprosound.com</span></div>
         </div>
       </nav>
 
@@ -55,11 +55,11 @@ function Footer({ logo }: LogoProps) {
         <div className="footer-grid">
           <div className="footer-col">
             <img src={logo} className="footer-logo" alt="Just Enough Sound" />
-            <p>Just Enough Sound is a philosophy of precise technical equilibrium. We provide exactly what is needed for mission-critical stability.</p>
+            <p>Just Enough Sound Co., LLC is a philosophy of precise technical equilibrium. We provide exactly what is needed for mission-critical stability.</p>
           </div>
           <div className="footer-col">
-            <h4>Direct Access</h4>
-            <p>Identity: Just Enough Sound Co., LLC</p>
+            <h4>Entity Information</h4>
+            <p>Just Enough Sound Co., LLC</p>
             <p>Email: sam@justprosound.com</p>
             <p>GitHub: github.com/justprosound</p>
           </div>
@@ -78,14 +78,13 @@ function Footer({ logo }: LogoProps) {
 function ProductionView({ logo }: LogoProps) {
   return (
     <div className="view-fade-in">
-      <header>
+      <header className="hero-header">
         <div className="container">
-          <div className="identity-label">Identity Protocol // FIELD_OPS</div>
+          <div className="identity-label">Entity // Just Enough Sound Co., LLC</div>
           <img src={logo} className="logo" alt="Just Enough Sound" />
-          <h1 className="hero-title">Professional Production</h1>
+          <h1 className="hero-title">Just Enough Sound Co., LLC</h1>
           <p className="hero-sub">
-            Precision engineering for live event production and high-stakes theatrical delivery. 
-            Identified by the <span className="accent">Blue Ring</span> signature of stability.
+            Precision engineering for live event production and high-stakes theatrical delivery.
           </p>
         </div>
       </header>
@@ -130,13 +129,13 @@ function ProductionView({ logo }: LogoProps) {
 function DevView({ logo }: LogoProps) {
   return (
     <div className="view-fade-in">
-      <header style={{ background: 'none', padding: '8rem 0 4rem' }}>
+      <header className="hero-header" style={{ background: 'none' }}>
         <div className="container">
-          <div className="identity-label">Identity Protocol // CORE_DEV</div>
+          <div className="identity-label">Entity // Just Enough Sound Co., LLC</div>
           <img src={logo} className="logo" alt="Just Enough Sound" />
-          <h1 className="hero-title" style={{ fontSize: '4rem' }}>Infrastructure</h1>
+          <h1 className="hero-title" style={{ fontSize: 'clamp(2.5rem, 6vw, 4rem)' }}>Infrastructure</h1>
           <p className="hero-sub">
-            The technical foundation of Just Enough Sound. 
+            The technical foundation of Just Enough Sound Co., LLC. 
             Open source modules optimized for live production environments.
           </p>
         </div>
