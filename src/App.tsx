@@ -26,7 +26,7 @@ function SystemNav({ theme, toggleTheme }: ThemeProps) {
       <nav className="status-bar">
         <div className="status-item">
           <div className="status-indicator"></div>
-          <span className="hide-mobile">Identity:</span> <span>Just Enough Sound</span>
+          <span>Just Enough Sound</span>
         </div>
         <div className="status-group">
           <div className="status-item">
@@ -80,8 +80,9 @@ function ProductionView({ logo }: LogoProps) {
     <div className="view-fade-in">
       <header className="hero-header">
         <div className="container">
-          <div className="identity-label">Entity // Just Enough Sound Co., LLC</div>
-          <img src={logo} className="logo" alt="Just Enough Sound" />
+          <div className="logo-hero-wrap">
+            <img src={logo} className="logo" alt="Just Enough Sound Logo" />
+          </div>
           <h1 className="hero-title">Just Enough Sound Co., LLC</h1>
           <p className="hero-sub">
             Precision engineering for live event production and high-stakes theatrical delivery.
@@ -131,8 +132,9 @@ function DevView({ logo }: LogoProps) {
     <div className="view-fade-in">
       <header className="hero-header" style={{ background: 'none' }}>
         <div className="container">
-          <div className="identity-label">Entity // Just Enough Sound Co., LLC</div>
-          <img src={logo} className="logo" alt="Just Enough Sound" />
+          <div className="logo-hero-wrap">
+            <img src={logo} className="logo" alt="Just Enough Sound Logo" />
+          </div>
           <h1 className="hero-title" style={{ fontSize: 'clamp(2.5rem, 6vw, 4rem)' }}>Infrastructure</h1>
           <p className="hero-sub">
             The technical foundation of Just Enough Sound Co., LLC. 
