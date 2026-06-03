@@ -17,7 +17,6 @@
   --stage-glow: radial-gradient(circle at 50% -20%, rgba(0, 122, 255, 0.08), transparent 70%);
   
   --system-green: #00ff41;
-  --system-blue: #007aff;
 
   color-scheme: dark;
 }
@@ -37,7 +36,6 @@
   --stage-glow: radial-gradient(circle at 50% -20%, rgba(0, 85, 255, 0.05), transparent 70%);
   
   --system-green: #059669;
-  --system-blue: #0055ff;
   
   color-scheme: light;
 }
@@ -104,6 +102,21 @@ body {
   gap: 0.6rem;
 }
 
+.status-link {
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.status-link:hover {
+  color: var(--accent-color);
+}
+
+.status-link.active {
+  color: var(--accent-color);
+  font-weight: 700;
+}
+
 .status-indicator {
   width: 8px;
   height: 8px;
@@ -159,6 +172,15 @@ h1.hero-title {
   max-width: 800px;
   margin: 0 auto;
   font-weight: 300;
+}
+
+.view-fade-in {
+  animation: fadeIn 0.6s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 /* --- Main Sections --- */
@@ -271,6 +293,7 @@ h1.hero-title {
   display: flex;
   align-items: center;
   gap: 0.8rem;
+  cursor: pointer;
 }
 
 .card-action::after {
@@ -368,4 +391,5 @@ footer {
   .grid-system { grid-template-columns: 1fr; }
   .card-dynamic { padding: 2rem; }
   .status-group { display: none; }
+  .hide-mobile { display: none; }
 }
